@@ -1,6 +1,6 @@
 # config.py
-headbanging_threshold = 3
-angle_threshold = 3
+headbanging_threshold = 5
+angle_threshold = 5
 time_interval = 1
 
 direction_mapping = {

@@ -21,7 +21,6 @@ def unify(handclap, headbanging, sitstand):
         if (val_i or val_j or val_k):
             unified[idx] = val
     
-    print(unified)
     return dict_to_dataframe(unified)
 
 
