@@ -7,11 +7,17 @@ This is the main execution function of the program. It uses argparse to receive 
 - `--save`: If this option is enabled, the cropped video file will be saved.
 - `--mode`: Sets the operation mode. You must select either 'video' or 'eval'.
 - `--path`: Sets the video path in 'video' mode.
+- `--plot` : If this option is enabled, you can check timelines of detection results.
 
 Below is an example command to illustrate how to run this program. This command enables the `crop` option, sets the sampling interval to 5, and saves the cropped video file. The operation mode is set to `video`, and the video path is set to `./example.mp4`.
 
 ```bash
 python main.py --crop --sample 5 --save --mode video --path ./example.mp4
+```
+
+If the **detection reuslt** file (.csv) already exist then the model will bypass detection process and just plot the result.
+```
+python main.py --mode video --path {existing file}.mp4 --plot
 ```
 
 Based on the input arguments, the function performs the following processes:
